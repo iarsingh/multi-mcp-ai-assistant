@@ -1,5 +1,12 @@
 # Multi-MCP AI Assistant
 
+## Overview
+
+A small assistant that gathers tools from several MCP servers into one list. Tools from the github, k8s and db namespaces are listed through `GET /tools` and invoked through `POST /call`, and any apply operation is refused. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local laptop lab with tests; it does not call a hosted model or apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
